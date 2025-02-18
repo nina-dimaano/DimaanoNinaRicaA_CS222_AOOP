@@ -5,13 +5,13 @@ class InterestCalculator
     static void Main()
     {
         Console.Write("Enter principal amount: ");
-        double principalAmount = Convert.ToDouble(Console.ReadLine());
+        double principalAmount = double.Parse(Console.ReadLine());
 
         Console.Write("Enter rate of interest: ");
-        double rateOfInterest = Convert.ToDouble(Console.ReadLine());
+        double rateOfInterest = double.Parse(Console.ReadLine());
 
         Console.Write("Enter time in years: ");
-        double timeInYears = Convert.ToDouble(Console.ReadLine());
+        double timeInYears = double.Parse(Console.ReadLine());
 
         double simpleInterest = (principalAmount * rateOfInterest * timeInYears) / 100;
 
